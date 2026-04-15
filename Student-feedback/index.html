@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>Course Review Portal</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<div class="container">
+    <h2>Student Feedback </h2>
+    <p class="subtitle">Share your experience</p>
+
+    <form action="submit.php" method="post">
+
+        <input type="text" name="name" placeholder="Your Name" required>
+        <input type="text" name="course" placeholder="Course Name" required>
+
+        <!-- Star Rating -->
+        <div class="rating">
+            <label>Rating:</label><br>
+            <input type="radio" name="rating" value="5" required> ⭐⭐⭐⭐⭐<br>
+            <input type="radio" name="rating" value="4"> ⭐⭐⭐⭐<br>
+            <input type="radio" name="rating" value="3"> ⭐⭐⭐<br>
+            <input type="radio" name="rating" value="2"> ⭐⭐<br>
+            <input type="radio" name="rating" value="1"> ⭐
+        </div>
+
+        <textarea name="feedback" placeholder="Write your feedback..." required></textarea>
+
+        <button type="submit">Submit Review</button>
+    </form>
+
+    <a href="view.php" class="view-btn">View Reviews</a>
+
+    <p class="credit">Developed by Ravi</p>
+</div>
+
+</body>
+</html>
